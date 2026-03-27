@@ -11,8 +11,8 @@ public class WordSortRunner
 	{
 		WordSort ws = new WordSort("abc ABC 12321 fred alexander");
 		//...
-		
-		
 		//add test cases to test your WordSort Class
+		ws.sort();
+		System.out.println(ws);
 	}
 }
