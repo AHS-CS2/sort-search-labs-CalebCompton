@@ -9,17 +9,27 @@ import static java.lang.System.*;
 public class WordSortTwo {
 	private String[] wordRay;
 
-	public WordSortTwo(String sentence) {
+	public WordSortTwo(String sentence)
+	{
+		setWords(sentence);
 	}
 
-	public void setWords(String sentence) {
+	public void setWords(String sentence) 
+	{
+		wordRay = sentence.split(" ");
 	}
 
-	public void sort() {
+	public void sort() 
+	{
+		Arrays.sort(wordRay);
 	}
 
 	public String toString() {
 		String output = "";
+		for(int i = 0; i < wordRay.length; i++)
+		{
+			System.out.println(wordRay[i]);
+		}
 		return output + "\n\n";
 	}
 }
