@@ -27,6 +27,10 @@ public class WordSort
 	public String toString( )
 	{
 		String output = "";
+		for(int i = 0; i < wordRay.length; i++)
+		{
+			System.out.println("word " + i + " :: " + wordRay[i]);
+		}
 		return output + "\n\n";
 	}
 }
